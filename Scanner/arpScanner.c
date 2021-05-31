@@ -110,6 +110,7 @@ void setFrame(unsigned char *frame, int lastOct){
     memcpy(frame+22, MAC_Origen, 6); //MAC origen
     memcpy(frame+28, IP_ADDR, 4); //IP Origen
     memcpy(frame+32, MAC_Broad, 6); //MAC Destino - Broadcast
+    //printf("%s\n", IP_ADDR & MAC_Origen);
     unsigned char IP_DST[4] = { 192,168,100,lastOct };
     displayDir(IP_DST, 4);
     printf("\n");
