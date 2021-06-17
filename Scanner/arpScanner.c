@@ -100,7 +100,7 @@ void getData(int socket){
 
 void setFrame(unsigned char *frame, int lastOct){
     memcpy(frame+0, MAC_Broad, 6); //MAC destino - Broadcast
-    memcpy(frame+6, IP_ADDR, 6); //MAC origen
+    memcpy(frame+6, IP_ADDR, 6); //IP origen
     memcpy(frame+12, ETH_TYPE, 2); //Tipo de trama
     memcpy(frame+14, HW_TYPE, 2); //Tipo de HW
     memcpy(frame+16, P_TYPE, 2); //Tipo de Protocolo
